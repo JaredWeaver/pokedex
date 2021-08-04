@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  font-size: 0.5rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+ul li:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  border-top: 8px #ec2059 solid;
+  border-bottom: 2px lightgrey solid;
+  height: 10vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 10000;
+}
+
+.header h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: lightslategray;
+}
+
+#pokemon {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5rem 2rem;
+  max-width: fit-content;
+}
