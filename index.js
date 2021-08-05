@@ -1,4 +1,7 @@
 let pokedexList = document.getElementById('pokemon');
+let modalBtn = document.getElementById('modal-btn');
+let modal = document.querySelector('.modal');
+let closeBtn = document.querySelector('.close-btn');
 
 const allPokemonURL = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 
@@ -32,8 +35,8 @@ const clickPokemon = (pokemonId) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      data.abilities.map((ability) => {
-        // add modal with each ability
+      const pokemonCard = data.map((attribute) => {
+        ``;
       });
     });
 };
